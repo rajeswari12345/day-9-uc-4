@@ -1,22 +1,21 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿
+// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
 class program
 {
-    static void Main(string[] args)
-    {
+    
+        private static void AddPerson()
+        {
+            Person person = new Person();
 
-        Person person = new Person();
-        Console.Write("Enter your Name: ");
-        person.Name = Console.ReadLine();
+            Console.Write("Enter First Name: ");
+            person.FirstName = Console.ReadLine();
 
-        Console.Write("name is mani ");
-        person.name = Console.ReadLine();
+            Console.Write("Enter Last Name: ");
+            person.LastName = Console.ReadLine();
 
-        Console.Write("delete you name: ");
-        person.Name = Console.ReadLine();
-    }
+            Console.Write("Enter Phone Number: ");
+            person.PhoneNumber = Console.ReadLine();
+        }
+    
 }
-
-
-
-
